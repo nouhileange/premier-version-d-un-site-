@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous - Chez Eliora Saveurs</title>
+  <link rel="stylesheet" href="parti1.css">
+  <link href="bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Navbar (identique à tes autres pages) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="parti1.html">
+        <img src="eliora photo/1a-removebg-preview.png" alt="Logo Mama Africa" style="height:40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="parti1.html">Accueil</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="plats_sucres.html">Plats sucrés</a></li>
+              <li><a class="dropdown-item" href="plats_sales.html">Plats salés</a></li>
+            </ul>
+          </li>
+           </li>
+           <!-- Lien commander ajouté ici -->
+          <li class="nav-item">
+           <a class="nav-link" href="commande.html">Commander</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contactez-nous</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Contact -->
+  <section style="max-width: 520px; margin: 100px auto 40px auto; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); padding: 32px;">
+  <h2 style="text-align:center; margin-bottom: 24px;">Contactez-nous</h2>
+  <form action="mailto:eliorasaveurs@email.com" method="post" enctype="text/plain">
+    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+      <div style="flex:1;">
+        <label for="prenom" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Prénom</label>
+        <input type="text" class="form-control" id="prenom" name="Prénom" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+      </div>
+      <div style="flex:1;">
+        <label for="nom" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Nom</label>
+        <input type="text" class="form-control" id="nom" name="Nom" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+      </div>
+    </div>
+    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+      <div style="flex:1;">
+        <label for="telephone" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Téléphone</label>
+        <input type="tel" class="form-control" id="telephone" name="Téléphone" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+      </div>
+      <div style="flex:1;">
+        <label for="email" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">E-mail</label>
+        <input type="email" class="form-control" id="email" name="Email" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+      </div>
+    </div>
+    <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+      <div style="flex:1;">
+        <label for="commune" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Commune</label>
+        <input type="text" class="form-control" id="commune" name="Commune" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+      </div>
+      <div style="flex:1;">
+        <label for="quartier" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Quartier ou cité</label>
+        <input type="text" class="form-control" id="quartier" name="Quartier ou cité" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+      </div>
+    </div>
+    <div style="margin-bottom: 16px;">
+      <label for="appartement" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Appartement (optionnel)</label>
+      <input type="text" class="form-control" id="appartement" name="Appartement" style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;">
+    </div>
+    <div style="margin-bottom: 20px;">
+      <label for="message" style="font-weight:500; color:#1c180d; margin-bottom:6px; display:block;">Votre message</label>
+      <textarea class="form-control" id="message" name="Message" rows="4" required style="border-radius:10px; border:1px solid #e9e2ce; background:#fcfbf8; padding:12px;"></textarea>
+    </div>
+    <button type="submit" class="btn btn-reservation" style="width:100%; background:#fac638; color:#1c180d; font-weight:bold; border-radius:10px; border:none; padding:12px 0;">Envoyer</button>
+  </form>
+  <div style="margin-top:24px; text-align:center;">
+    <p>Ou contactez-nous directement :</p>
+    <a href="tel:0171686656" class="btn btn-outline-dark" style="margin: 0 8px;">Téléphone</a>
+    <a href="https://wa.me/+2250747449099" target="_blank" class="btn btn-outline-success" style="margin: 0 8px;">WhatsApp</a>
+    <a href="mailto:eliorasaveurs@email.com" class="btn btn-outline-primary" style="margin: 0 8px;">E-mail</a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding: 24px 0;">
+    <div class="reseaux-sociaux" style="margin-bottom: 12px;">
+      <a href="https://web.facebook.com/Eliorasaveurs?locale=fr_FR" target="_blank" title="Facebook" style="margin:0 12px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:32px; height:32px; vertical-align:middle;">
+      </a>
+      <a href="https://wa.me/+2250747449099" target="_blank" title="WhatsApp" style="margin:0 12px;">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:32px; height:32px; vertical-align:middle;">
+      </a>
+      <a href="tel:0171686656" title="Téléphone" style="margin:0 12px;">
+        <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/icons/telephone-fill.svg" alt="Téléphone" style="width:32px; height:32px; vertical-align:middle;">
+      </a>
+    </div>
+    &copy; 2025 Chez eliora saveurs – Tous droits réservés
+  </footer>
+  <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

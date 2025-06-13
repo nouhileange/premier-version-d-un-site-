@@ -11,10 +11,21 @@ a {
   text-decoration: none;
 }
 
-header {
-  background: url('https://source.unsplash.com/1600x900/?african-restaurant') no-repeat center center/cover;
-  color: white;
-  padding: 100px 20px;
+.header-box {
+  width: 100%;
+  max-width: 900px;
+  height: 400px;
+  margin: 40px auto 0 auto;
+  background: url('eliora photo/9.jpg') no-repeat center center;
+   background-size: 100% 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  color: rgb(37, 35, 35);
+  padding: 30px;
   text-align: center;
 }
 
@@ -28,20 +39,6 @@ header p {
   margin-bottom: 1em;
 }
 
-.btn-reservation {
-  background: #e67e22 !important;  /* orange comme le logo */
-  color: #fff !important;
-  border: none !important;
-  font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-.btn-reservation:hover {
-  background: #cf711f !important;  /* orange plus foncé au survol */
-  color: #fff !important;
-}
-
 section {
   padding: 60px 20px;
   max-width: 960px;
@@ -53,23 +50,6 @@ h2 {
   font-size: 2em;
   margin-bottom: 30px;
 }
-
-.menu-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
-}
-
-.menu-item {
-  flex: 1 1 250px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  background: #f9f9f9;
-  text-align: center;
-}
-
 .menu-item img {
   max-width: 100%;
   border-radius: 8px;
@@ -122,43 +102,82 @@ footer {
     align-items: center;
   }
 }
-/* Ajoute ceci dans style.css */
-.main-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  justify-content: flex-end;
-  padding: 1rem 0 1rem 2rem;
-  margin: 0;
-  background: #575454;
-}
-.main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.2s;
-}
-.main-nav a:hover {
-  color: #d2691e;
-}
-.plat-card {
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(230, 103, 34, 0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-.plat-card:hover {
-  transform: translateY(-10px) scale(1.04);
-  box-shadow: 0 8px 24px rgba(230, 103, 34, 0.18);
-  border-color: #e67e22;
+.plats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
 }
 
-.card-img-top {
-  border-radius: 0;
-  height: 180px;
-  object-fit: cover;
+.carte-desc-sous {
+  margin: 10px 0 0 0;
+  font-size: 1em;
+  text-align: center;
+  color: #0a0a0a;
+  text-align: left;
+  min-height: 40px;
+   line-height: 1.1; /* réduit aussi l’interligne du titre si besoin */
 }
+.plat-card {
+  background: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(230, 103, 34, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.plat-card:hover {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(230,103,34,0.25);
+  z-index: 2;
+}
+
+.section-title {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 32px 0 16px 0;
+  color: #181111;
+  text-align: left;
+  font-family: inherit; /* ou la police que tu veux */
+}
+.card-img-bg {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 22px 22px 0 0;
+}
+
+.card-body {
+  padding: 18px 14px 14px 14px;
+  text-align: left;
+}
+.desc-titre {
+  font-weight: bold;
+  color: #181111;
+  font-size: 1em;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.plat-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #181111;
+}
+
+.plat-desc {
+  font-size: 0.98em;
+  color: #886364;
+  margin: 0;
+  word-break: break-word;
+
+}
+
 
 .btn-reservation {
   background: #e67e22 !important;
@@ -173,4 +192,40 @@ footer {
 .btn-reservation:hover {
   background: #cf711f !important;
   color: #fff !important;
+}
+.reseaux-sociaux img {
+  filter: brightness(0) invert(1);
+}
+/* Animation au clic sur les cartes */
+.plat-card.animated {
+  animation: bounceCard 0.4s;
+}
+
+
+@keyframes bounceCard {
+  0%   { transform: scale(1); box-shadow: 0 2px 8px rgba(0,0,0,0.10);}
+  30%  { transform: scale(1.08); box-shadow: 0 8px 24px rgba(230,103,34,0.18);}
+  60%  { transform: scale(0.97);}
+  100% { transform: scale(1); box-shadow: 0 2px 8px rgba(0,0,0,0.10);}
+}
+.plats-grid > div:nth-child(1) .card-img-bg {
+  background-image: url('eliora photo/21.jpg');
+  transition: background-image 0.3s;
+}
+.plats-grid > div:nth-child(1):hover .card-img-bg {
+  background-image: url('eliora photo/23.jpg');
+}
+.plats-grid > div:nth-child(5) .card-img-bg {
+  background-image: url('eliora photo/19.jpg');
+  transition: background-image 0.3s;
+}
+.plats-grid > div:nth-child(5):hover .card-img-bg {
+  background-image: url('eliora photo/25.jpg');
+}
+.card-img-bg {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
 }
