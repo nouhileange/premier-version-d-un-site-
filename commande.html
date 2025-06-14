@@ -75,32 +75,35 @@
 
   <script>
     // 10 plats salés
-    const platsSales = [
-      { nom: "Gratin de pommes de terre", desc: "Gratin fondant de pommes de terre, crème et fromage.", prix: 2000, img: "eliora photo/sale1.jpg" },
-      { nom: "Crêpes fourrées poulet", desc: "Crêpes salées garnies de poulet.", prix: 1500, img: "eliora photo/sale2.jpg" },
-      { nom: "Crêpes fourrées viande", desc: "Crêpes salées garnies de viande hachée.", prix: 1500, img: "eliora photo/sale3.jpg" },
-      { nom: "Mini burgers", desc: "Mini burgers maison, steak, fromage, crudités.", prix: 1200, img: "eliora photo/sale4.jpg" },
-      { nom: "Mini pizzas", desc: "Mini pizzas moelleuses, sauce tomate, fromage, garniture au choix.", prix: 1200, img: "eliora photo/sale5.jpg" },
-      { nom: "Quiche lorraine", desc: "Quiche salée aux lardons et fromage.", prix: 1800, img: "eliora photo/sale6.jpg" },
-      { nom: "Samoussas", desc: "Samoussas croustillants à la viande.", prix: 1000, img: "eliora photo/sale7.jpg" },
-      { nom: "Nems au poulet", desc: "Nems croustillants au poulet.", prix: 1200, img: "eliora photo/sale8.jpg" },
-      { nom: "Tacos mini", desc: "Mini tacos garnis au choix.", prix: 1500, img: "eliora photo/sale9.jpg" },
-      { nom: "Feuilletés au fromage", desc: "Feuilletés dorés au fromage.", prix: 1000, img: "eliora photo/sale10.jpg" }
-    ];
+   const platsSales = [
+  { nom: "Mini pizzas", desc: "Pâte fine, sauce tomate, fromage et garniture au choix.", prix: 1200, img: "eliora photo/21.jpg" },
+  { nom: "Chaussons africains frits ou pastels", desc: "Beignets farcis à la viande épicée, frits dorés.", prix: 1000, img: "eliora photo/w5.webp" },
+  { nom: "Brochettes d'alloco et boulettes de viande", desc: "Plantain grillé et boulettes de viande savoureuses.", prix: 1500, img: "eliora photo/w4.jpg" },
+  { nom: "Crêpes Fourrées", desc: "Crêpes moelleuses garnies de viande et légumes.", prix: 1500, img: "eliora photo/13.jpg" },
+  { nom: "Mini burgers", desc: "Burgers avec steak, fromage et crudités.", prix: 1200, img: "eliora photo/19.jpg" },
+  { nom: "Gratin de pommes de terre", desc: "Pommes de terre, crème, viande hachée et fromage gratiné.", prix: 2000, img: "eliora photo/w3.jpg" },
+  { nom: "Poulet sauté aux légumes", desc: "Poulet tendre aux légumes croquants.", prix: 1800, img: "eliora photo/w6.jpg" },
+  { nom: "Poulet pané", desc: "Poulet croustillant pané et doré.", prix: 1500, img: "eliora photo/w7.jpg" },
+  { nom: "Poulet braisé épicé", desc: "Poulet grillé et bien assaisonné.", prix: 2000, img: "eliora photo/w8.jpg" },
+  { nom: "Crêpes salées fourrées", desc: "Crêpes garnies de viande, légumes et fromage fondant.", prix: 1500, img: "eliora photo/w9.jpg" }
+];
+
+
 
     // 10 plats sucrés
     const platsSucres = [
-      { nom: "Crêpes chocolat – céréales", desc: "Crêpe chocolat, céréales croustillantes.", prix: 1000, img: "eliora photo/2.jpg" },
-      { nom: "Crêpes chocolat – noisette", desc: "Crêpe chocolat-noisette fondante.", prix: 1000, img: "eliora photo/7.jpg" },
-      { nom: "Crêpes chocolat – fruits", desc: "Crêpe chocolat, fruits frais.", prix: 1200, img: "eliora photo/3.jpg" },
-      { nom: "Crêpes au Cerelac", desc: "Crêpe moelleuse enrichie au Cerelac.", prix: 1000, img: "eliora photo/5.jpg" },
-      { nom: "Crêpes natures", desc: "Crêpes simples et légères.", prix: 800, img: "eliora photo/1.jpg" },
-      { nom: "Gâteau au yaourt", desc: "Gâteau moelleux au yaourt.", prix: 1500, img: "eliora photo/gd_recette_GateauYaourt.jpg" },
-      { nom: "Muffins chocolat", desc: "Muffins moelleux au chocolat.", prix: 1200, img: "eliora photo/8.jpg" },
-      { nom: "Cookies maison", desc: "Cookies croustillants aux pépites de chocolat.", prix: 1000, img: "eliora photo/9.jpg" },
-      { nom: "Tarte aux pommes", desc: "Tarte fine aux pommes caramélisées.", prix: 1500, img: "eliora photo/10.jpg" },
-      { nom: "Beignets sucrés", desc: "Beignets moelleux au sucre.", prix: 800, img: "eliora photo/11.jpg" }
-    ];
+  { nom: "Crêpes au chocolat simple", desc: "Crêpe moelleuse garnie de pâte à tartiner au chocolat, idéale pour les gourmands.", prix: 1000, img: "eliora photo/4.jpg" },
+  { nom: "Crêpes chocolat – céréales", desc: "Crêpe moelleuse au chocolat, saupoudrée de céréales croustillantes pour plus de texture.", prix: 1200, img: "eliora photo/2.jpg" },
+  { nom: "Crêpes chocolat – noisette", desc: "Crêpe garnie de pâte à tartiner chocolat-noisette, pour un goût intense et fondant.", prix: 1200, img: "eliora photo/7.jpg" },
+  { nom: "Crêpes au Cerelac", desc: "Crêpe moelleuse enrichie au Cerelac, parfaite pour petits et grands.", prix: 1500, img: "eliora photo/5.jpg" },
+  { nom: "Crêpes natures", desc: "Crêpes simples et légères, à déguster nature ou avec la garniture de votre choix.", prix: 800, img: "eliora photo/1.jpg" },
+  { nom: "Crêpes au miel 🍯", desc: "Crêpes moelleuses nappées de miel doux, pour une touche sucrée naturelle.", prix: 1500, img: "eliora photo/12.jpg" },
+  { nom: "Sablés au Cerelac", desc: "Délicieux biscuits sablés fondants, préparés avec de la farine et du Cerelac.", prix: 1000, img: "eliora photo/Biscuits-sablés-au-Cerelac-2.jpg" },
+  { nom: "Miel du Burkina", desc: "Miel pur et naturel du Burkina Faso, parfait pour accompagner vos crêpes ou desserts.", prix: 3500, img: "eliora photo/w1.jpg" },
+  { nom: "Gâteau au four", desc: "Gâteau moelleux cuit au four, idéal pour le goûter ou le dessert.", prix: 2000, img: "eliora photo/gd_recette_GateauYaourt.jpg" },
+  { nom: "Gâteau au four avec pépites de chocolat", desc: "Gâteau moelleux agrémenté de pépites de chocolat fondantes.", prix: 2500, img: "eliora photo/78620_w1024h1024c1cx2808cy1872.jpg" }
+];
+
 
     let categorieActuelle = 'sale'; // Par défaut
     let panier = {};

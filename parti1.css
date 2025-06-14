@@ -103,12 +103,29 @@ footer {
   }
 }
 .plats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-  max-width: 1200px;
-  margin: 0 auto 40px auto;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+    .plat-card {
+      cursor: pointer;
+    }
+    .card-img-bg {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+    .carte-desc-sous {
+      margin-top: 10px;
+    }
+    .desc-titre {
+      font-weight: bold;
+    }
+
 
 .carte-desc-sous {
   margin: 10px 0 0 0;

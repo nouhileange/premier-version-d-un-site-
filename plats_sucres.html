@@ -7,27 +7,21 @@
   <link rel="stylesheet" href="parti1.css">
   <link href="bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- ===== NAVBAR (menu principal en haut de page) ===== -->
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <!-- Logo à gauche, cliquable pour revenir à l'accueil -->
       <a class="navbar-brand" href="parti1.html">
         <img src="eliora photo/1a-removebg-preview.png" alt="Logo Mama Africa" style="height:40px;">
       </a>
-      <!-- Bouton hamburger pour afficher le menu sur mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Liens du menu (à droite sur grand écran) -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-lg-auto">
-          <!-- Lien vers la section Accueil (ancre sur la page) -->
-          <li class="nav-item">
-            <a class="nav-link" href="parti1.html">Accueil</a>
-          </li>
-          <!-- Menu déroulant pour plats sucrés/salés -->
+          <li class="nav-item"><a class="nav-link" href="parti1.html">Accueil</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Menu
@@ -37,125 +31,19 @@
               <li><a class="dropdown-item" href="plats_sales.html">Plats salés</a></li>
             </ul>
           </li>
-          <!-- Lien vers Stitch Design -->
-          <li class="nav-item">
-            <a class="nav-link" href="commande.html">commander</a>
-          </li>
-          <!-- Lien vers la section "contacter nous" -->
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">contacter nous</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="commande.html">commander</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contacter nous</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <h2 class="section-title" style="text-align:center; margin-top: 80px;">Plats Sucrés</h2>
 
-  <h2 class="section-title" style="text-align:center;">Plats Sucrés</h2>
-  <div class="plats-grid" style="grid-template-columns: repeat(5, 1fr); gap:32px; max-width:1200px; margin:0 auto;">
-    <!-- Carte 1 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/4.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Crêpes au chocolat simple</span>
-        Crêpe moelleuse garnie de pâte à tartiner au chocolat, idéale pour les gourmands.
-      </p>
-    </div>
-    <!-- Carte 2 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/2.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Crêpes chocolat – céréales</span>
-        Crêpe moelleuse au chocolat, saupoudrée de céréales croustillantes pour plus de texture.
-      </p>
-    </div>
-    <!-- Carte 3 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/7.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Crêpes chocolat – noisette</span>
-        Crêpe garnie de pâte à tartiner chocolat-noisette, pour un goût intense et fondant.
-      </p>
-    </div>
-    <!-- Carte 4 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/5.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Crêpes au Cerelac</span>
-        Crêpe moelleuse enrichie au Cerelac, parfaite pour petits et grands.
-      </p>
-    </div>
-    <!-- Carte 5 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/1.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Crêpes natures</span>
-        Crêpes simples et légères, à déguster nature ou avec la garniture de votre choix.
-      </p>
-    </div>
-    <!-- Carte 6 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/12.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Crêpes au miel 🍯</span>
-        Crêpes moelleuses nappées de miel doux, pour une touche sucrée naturelle.
-      </p>
-    </div>
-    <!-- Carte 7 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/Biscuits-sablés-au-Cerelac-2.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Sablés au Cerelac</span>
-        Délicieux biscuits sablés fondants, préparés avec de la farine et du Cerelac.
-      </p>
-    </div>
-    <!-- Carte 8 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/w1.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Miel du Burkina</span>
-        Miel pur et naturel du Burkina Faso, parfait pour accompagner vos crêpes ou desserts.
-      </p>
-    </div>
-    <!-- Carte 9 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/gd_recette_GateauYaourt.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Gâteau au four</span>
-        Gâteau moelleux cuit au four, idéal pour le goûter ou le dessert.
-      </p>
-    </div>
-    <!-- Carte 10 -->
-    <div>
-      <div class="plat-card">
-        <div class="card-img-bg" style="background-image: url('eliora photo/78620_w1024h1024c1cx2808cy1872.jpg');"></div>
-      </div>
-      <p class="carte-desc-sous">
-        <span class="desc-titre">Gâteau au four avec pépites de chocolat</span>
-        Gâteau moelleux agrémenté de pépites de chocolat fondantes.
-      </p>
-    </div>
+  <div class="plats-grid" id="plats">
+    <!-- Le contenu sera généré automatiquement par JS -->
   </div>
 
-  <!-- Footer avec réseaux sociaux -->
   <footer style="text-align:center; padding: 24px 0;">
     <div class="reseaux-sociaux" style="margin-bottom: 12px;">
       <a href="https://web.facebook.com/Eliorasaveurs?locale=fr_FR" target="_blank" title="Facebook" style="margin:0 12px;">
@@ -171,16 +59,34 @@
     &copy; 2025 Chez eliora saveurs – Tous droits réservés
   </footer>
 
-  <!-- Animation au clic sur les cartes -->
   <script>
-    document.querySelectorAll('.plat-card').forEach(function(card) {
-      card.addEventListener('click', function() {
-        card.classList.remove('animated'); // reset si déjà animé
-        void card.offsetWidth; // force reflow pour relancer l'animation
-        card.classList.add('animated');
-      });
+    const platsSucres = [
+      { nom: "Crêpes au chocolat simple", desc: "Crêpe moelleuse garnie de pâte à tartiner au chocolat, idéale pour les gourmands.", img: "eliora photo/4.jpg" },
+      { nom: "Crêpes chocolat – céréales", desc: "Crêpe moelleuse au chocolat, saupoudrée de céréales croustillantes pour plus de texture.", img: "eliora photo/2.jpg" },
+      { nom: "Crêpes chocolat – noisette", desc: "Crêpe garnie de pâte à tartiner chocolat-noisette, pour un goût intense et fondant.", img: "eliora photo/7.jpg" },
+      { nom: "Crêpes au Cerelac", desc: "Crêpe moelleuse enrichie au Cerelac, parfaite pour petits et grands.", img: "eliora photo/5.jpg" },
+      { nom: "Crêpes natures", desc: "Crêpes simples et légères, à déguster nature ou avec la garniture de votre choix.", img: "eliora photo/1.jpg" },
+      { nom: "Crêpes au miel 🍯", desc: "Crêpes moelleuses nappées de miel doux, pour une touche sucrée naturelle.", img: "eliora photo/12.jpg" },
+      { nom: "Sablés au Cerelac", desc: "Délicieux biscuits sablés fondants, préparés avec de la farine et du Cerelac.", img: "eliora photo/Biscuits-sablés-au-Cerelac-2.jpg" },
+      { nom: "Miel du Burkina", desc: "Miel pur et naturel du Burkina Faso, parfait pour accompagner vos crêpes ou desserts.", img: "eliora photo/w1.jpg" },
+      { nom: "Gâteau au four", desc: "Gâteau moelleux cuit au four, idéal pour le goûter ou le dessert.", img: "eliora photo/gd_recette_GateauYaourt.jpg" },
+      { nom: "Gâteau au four avec pépites de chocolat", desc: "Gâteau moelleux agrémenté de pépites de chocolat fondantes.", img: "eliora photo/78620_w1024h1024c1cx2808cy1872.jpg" }
+    ];
+
+    const platsDiv = document.getElementById('plats');
+    platsSucres.forEach(plat => {
+      platsDiv.innerHTML += `
+        <div>
+          <div class="plat-card" onclick="window.location.href='commande.html'">
+            <div class="card-img-bg" style="background-image: url('${plat.img}');"></div>
+          </div>
+          <p class="carte-desc-sous">
+            <span class="desc-titre">${plat.nom}</span><br>${plat.desc}
+          </p>
+        </div>`;
     });
   </script>
+
   <script src="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
